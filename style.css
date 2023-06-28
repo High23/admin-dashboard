@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+body {
+    height: 100vh;
+}
+.layout-container {
+    height: 100%;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+.sidebar {
+    background-color: blueviolet;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+.header {
+    background-color: chocolate;
+    grid-column: 2 / 3;
+    grid-row: 1 / -2;
+}
+.main-content {
+    background-color: darkgreen;
+    grid-column: 2;
+    grid-row: -2 / -1;
+}
