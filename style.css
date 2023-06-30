@@ -43,8 +43,88 @@ a {
 }
 
 .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
     background-color: chocolate;
     grid-column: 2 / 3;
+    padding: 20px 100px 20px 60px;
+}
+
+img {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 15px;
+}
+
+input {
+    appearance: none;
+    border: none;
+    border-radius: 15px;
+    width: 95%;
+    height: 28px;
+    background-color: rgba(128, 128, 128, 0.459);
+}
+
+.user-and-icon {
+    display: grid;
+    grid-template-columns: repeat(2, auto) 1fr;
+    justify-self: end;
+    align-items: center;
+    column-gap: 25px;
+    padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+.user-and-icon > img:nth-child(2){
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.user-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    font-size: 1rem;
+    gap: 20px;
+}
+
+.user-info > span > div {
+    font-size: 1.4rem;
+}
+
+.user-info > img {
+    background-color: yellow;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    gap: 25px;
+}
+
+button {
+    appearance: none;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 100px;
+    color: white;
+    font-size: 1rem;
+    background-color: rgb(80, 185, 255);
 }
 
 .main-content {
