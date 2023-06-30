@@ -82,8 +82,9 @@ input {
     font-size: 1.2rem;
 }
 
-.user-and-icon > img:nth-child(2){
-    background-color: black;
+.user-and-icon > img:nth-child(2), 
+.trending > .user-and-icon > img {
+    background-color: yellow;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -119,8 +120,8 @@ input {
 button {
     appearance: none;
     border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
+    border-radius: 20px;
+    padding: 10px;
     width: 100px;
     color: white;
     font-size: 1rem;
@@ -128,6 +129,43 @@ button {
 }
 
 .main-content {
-    background-color: darkgreen;
+    background-color: wheat;
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    column-gap: 30px;
+    padding: 25px 35px 45px 20px;
+}
+.main-content > p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.project-cards, .anncmnts-and-trending {
+    display: grid;
+    gap: 30px;
+}
+
+.project-cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.anncmnts-and-trending {
+    grid-template-rows: 1fr 1fr;
+}
+
+.project-cards > div, 
+.anncmnts-and-trending > div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 25px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
