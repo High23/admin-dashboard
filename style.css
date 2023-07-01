@@ -83,7 +83,7 @@ input {
 }
 
 .user-and-icon > img:nth-child(2), 
-.trending > .user-and-icon > img {
+.trend > img {
     background-color: yellow;
     height: 40px;
     width: 40px;
@@ -95,7 +95,7 @@ input {
     grid-template-columns: auto 1fr;
     align-items: center;
     font-size: 1rem;
-    gap: 20px;
+    gap: 16px;
 }
 
 .user-info > span > div {
@@ -134,18 +134,21 @@ button {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto 1fr;
-    column-gap: 30px;
+    column-gap: 26px;
     padding: 25px 35px 45px 20px;
 }
 .main-content > p {
     font-size: 1.3rem;
-    font-weight: 500;
     padding-bottom: 15px;
 }
 
 .project-cards, .anncmnts-and-trending {
     display: grid;
-    gap: 30px;
+    gap: 26px;
+}
+
+.anncmnts-and-trending {
+    gap: 20px;
 }
 
 .project-cards {
@@ -154,18 +157,67 @@ button {
 }
 
 .anncmnts-and-trending {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
 }
 
 .project-cards > div, 
 .anncmnts-and-trending > div {
     background-color: #fff;
     border-radius: 10px;
-    padding: 40px 25px;
+    padding: 30px 25px;
+}
+
+.anncmnts-and-trending > .trending {
+    padding: 30px 25px;
 }
 
 .trending {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: space-between;
+}
+
+.announcement {
+    display: grid;
+    gap: 10px;
+}
+
+.annoucements-sub-text {
+    font-size: .8rem;
+}
+
+.announcement > div > div {
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.announcement > div {
+    padding-left: 5px;
+}
+
+.announcement > div > span,
+.project-cards > div > span,
+.main-content > p, .user-info,
+.user-and-icon > span,
+.announcement + span {
+    font-weight: 600;
+}
+
+.announcement + span {
+    font-size: 1.3rem;
+}
+
+.border-bottom {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+
+.trend {
+    display: flex;
+    gap: 10px;
+}
+
+.trend  > span > div,
+.project-cards > div > div,
+.announcement > div > span {
+    padding-top: 4px;
 }
