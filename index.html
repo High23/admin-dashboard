@@ -10,10 +10,10 @@
         <div class="layout-container">
             <div class="header">
                 <form>
-                    <label for="search-bar"><img src="icons/magnify.svg" alt="Search icon"></label>
+                    <label for="search-bar"><img src="icons/magnify.svg" alt="Search icon" class="icon"></label>
                     <input type="search" name="search-bar" id="search-bar">
                 </form>
-                <div class="user-and-icon"><a href=""><img src="icons/bell-ring-outline.svg" alt="Notifications icon"><img src="pfp-icons/tortoise.png" alt="User icon"></a><span>William Arenas</span></div>
+                <div class="user-and-icon"><a href="" class="sidebar-icons"><img src="icons/bell-ring-outline.svg" alt="Notifications icon" class="icon"><img src="pfp-icons/tortoise.png" alt="User icon"></a><span>William Arenas</span></div>
                 <div class="user-info"><img src="pfp-icons/tortoise.png" alt="User icon"><span>Hi there, <div>William Arenas (@High)</div></span></div>
                 <div class="buttons">
                     <button>New</button>
@@ -24,19 +24,23 @@
             <div class="sidebar">
                 <div class="dash"><a href=""><img src="icons/view-dashboard.svg" alt="Dashboard icon">Dashboard</a></div>
                 <ul>
-                    <li><a href=""><img src="icons/home.svg" alt="Home icon">Home</a></li>
-                    <li><a href=""><img src="icons/card-account-details-outline.svg" alt="Profile icon">Profile</a></li>
-                    <li><a href=""><img src="icons/message-reply.svg" alt="Messages icon">Messages</a></li>
-                    <li><a href=""><img src="icons/history.svg" alt="History icon">History</a></li>
-                    <li><a href=""><img src="icons/file-multiple.svg" alt="Tasks icon">Tasks</a></li>
-                    <li><a href=""><img src="icons/account-group.svg" alt="Communities icon">Communities</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/home.svg" alt="Home icon" class="icon">Home</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/card-account-details-outline.svg" alt="Profile icon" class="icon">Profile</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/message-reply.svg" alt="Messages icon" class="icon">Messages</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/history.svg" alt="History icon" class="icon">History</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/file-multiple.svg" alt="Tasks icon" class="icon">Tasks</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/account-group.svg" alt="Communities icon" class="icon">Communities</a></li>
                 </ul>
                 <ul>
-                    <li><a href=""><img src="icons/cog.svg" alt="Settings icon">Settings</a></li>
-                    <li><a href=""><img src="icons/help-box.svg" alt="Support icon">Support</a></li>
-                    <li><a href=""><img src="icons/shield-check.svg" alt="Privacy icon">Privacy</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/cog.svg" alt="Settings icon" class="icon">Settings</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/help-box.svg" alt="Support icon" class="icon">Support</a></li>
+                    <li><a href="" class="sidebar-icons"><img src="icons/shield-check.svg" alt="Privacy icon" class="icon">Privacy</a></li>
                 </ul>
-                <div class="credit"><a href="https://www.flaticon.com/packs/nature-194" title="Nature icons">User icons created by Freepik - Flaticon</a></div>
+                <div class="credit">
+                    <span>Credit:</span>
+                    <a href="https://www.flaticon.com/packs/nature-194" title="Nature icons">User icons created by Freepik - Flaticon</a>
+                    <a href="https://pictogrammers.com/library/mdi/" title="Icons">Icons found on Pictogrammers</a>
+                </div>
             </div>
             <div class="main-content">
                 <p>Your projects</p>
@@ -45,29 +49,41 @@
                     <div class="cards">
                         <span class="box-shadow"></span>
                         <span class="title">Sign Up Form</span>
-                        <div>
-                            A mock up sign up form that uses client side validation.
+                        <div>A mock up sign up form that uses client side validation.</div>
+                        <img src="images/sign-up.png" alt="image of a sign up form" class="project-images">
+                        <div class="view-and-github">
+                            <a href="https://high23.github.io/sign-up-form/"><img src="icons/eye-outline.svg" alt="icon outline of an eye" class="icon"></a>
+                            <a href="https://github.com/High23/sign-up-form"><img src="icons/github-mark.svg" alt="Github icon" class="icon"></a>
                         </div>
                     </div>
                     <div class="cards">
                         <span class="box-shadow"></span> 
                         <span class="title">Calculator</span>
-                        <div>
-                            A functional calculator written in JavaScript, HTML and CSS.
+                        <div>A functional calculator written in JavaScript, HTML and CSS.</div>
+                        <img src="images/calculator.png" alt="image of a calculator" class="project-images">
+                        <div class="view-and-github">
+                            <a href="https://high23.github.io/calculator/"><img src="icons/eye-outline.svg" alt="icon outline of an eye" class="icon"></a>
+                            <a href="https://github.com/High23/calculator"><img src="icons/github-mark.svg" alt="Github icon" class="icon"></a>
                         </div>
                     </div>
                     <div class="cards">
                         <span class="box-shadow"></span> 
                         <span class="title">Etch A Sketch</span>
-                        <div>
-                            A web based etch a sketch that uses pixel based coloring.
+                        <div>A web based etch a sketch that uses pixel based coloring.</div>
+                        <img src="images/etch.png" alt="image of a etch a sketch webpage" class="project-images">
+                        <div class="view-and-github">
+                            <a href="https://high23.github.io/etch-a-sketch/"><img src="icons/eye-outline.svg" alt="icon outline of an eye" class="icon"></a>
+                            <a href="https://github.com/High23/etch-a-sketch"><img src="icons/github-mark.svg" alt="Github icon" class="icon"></a>
                         </div>
                     </div>
                     <div class="cards">
                         <span class="box-shadow"></span>
                         <span class="title">Landing Page</span>
-                        <div>
-                            A nice and simple webpage created by HTML and CSS.
+                        <div>A nice and simple webpage created by HTML and CSS.</div>
+                        <img src="images/landing-page.png" alt="image of a webpage" class="project-images">
+                        <div class="view-and-github">
+                            <a href="https://high23.github.io/landing-page/"><img src="icons/eye-outline.svg" alt="icon outline of an eye" class="icon"></a>
+                            <a href="https://github.com/High23/landing-page"><img src="icons/github-mark.svg" alt="Github icon" class="icon"></a>
                         </div>
                     </div>
                 </div>
